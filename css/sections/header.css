@@ -1,0 +1,86 @@
+:root {
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+}
+
+.site-header {
+  padding: var(--spacing-md) 0;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  font-family: var(--monserat);
+}
+
+.brand-logo a {
+  text-decoration: none;
+}
+
+.brand-logo h1 {
+  color: var(--text-color);
+  margin: 0;
+}
+
+.nav-content {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-lg);
+  margin-left: 70px;
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--spacing-lg);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  color: var(--second-text-color);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+.nav-buttons {
+  display: flex;
+  gap: var(--spacing-lg);
+  align-items: center;
+}
+
+.btn {
+  font-family: var(--monserat);
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn--text {
+  color: var(--primary-color);
+  background: none;
+}
+
+.btn--primary {
+  text-transform: uppercase;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: 5px;
+  background: var(--primary-color);
+  color: var(--light-text-color);
+}
+
+.btn--primary i {
+  margin-left: var(--spacing-sm);
+}
